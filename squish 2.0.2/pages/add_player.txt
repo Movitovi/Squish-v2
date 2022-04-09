@@ -1,0 +1,193 @@
+control
+trigger = page_entrance
+action = new:player
+
+block
+size = [x1, x1]
+pos = [0, 0]
+color = 0xbbbbbb
+
+button
+button_pos = [0, 0]
+size = [x0.5, x0.07]
+pos = [cx0.5, cx0.2]
+active_color = 0x888888
+text_active_color = 0x999966
+text = 'Name: '
+text_bold = true
+text_size = 32
+text_pos = [lx0.04, cx0.5]
+action = input:player:name
+
+button
+button_pos = [0, 1]
+size = [x0.041, x0.07]
+pos = [cx0.2705, cx0.3]
+active_color = 0x888888
+text = '■'
+text_color = 0xff0000
+text_bold = true
+text_size = 96
+text_pos = [cx0.5, cx0.555]
+action = set:player:base_color:0xff0000
+
+button
+button_pos = [1, 1]
+size = [x0.041, x0.07]
+pos = [cx0.3215, cx0.3]
+active_color = 0x888888
+text = '■'
+text_color = 0x00cc00
+text_size = 96
+text_pos = [cx0.5, cx0.555]
+action = set:player:base_color:0x00cc00
+
+button
+button_pos = [2, 1]
+size = [x0.041, x0.07]
+pos = [cx0.3725, cx0.3]
+active_color = 0x888888
+text = '■'
+text_color = 0x0000ff
+text_size = 96
+text_pos = [cx0.5, cx0.555]
+action = set:player:base_color:0x0000ff
+
+button
+button_pos = [3, 1]
+size = [x0.041, x0.07]
+pos = [cx0.4235, cx0.3]
+active_color = 0x888888
+text = '■'
+text_color = 0xe600e6
+text_size = 96
+text_pos = [cx0.5, cx0.555]
+action = set:player:base_color:0xe600e6
+
+button
+button_pos = [4, 1]
+size = [x0.041, x0.07]
+pos = [cx0.4745, cx0.3]
+active_color = 0x888888
+text = '■'
+text_color = 0xffff00
+text_size = 96
+text_pos = [cx0.5, cx0.555]
+action = set:player:base_color:0xffff00
+
+button
+button_pos = [5, 1]
+size = [x0.041, x0.07]
+pos = [cx0.5255, cx0.3]
+active_color = 0x888888
+text = '■'
+text_color = 0xff99cc
+text_size = 96
+text_pos = [cx0.5, cx0.555]
+action = set:player:base_color:0xff99cc
+
+button
+button_pos = [6, 1]
+size = [x0.041, x0.07]
+pos = [cx0.5765, cx0.3]
+active_color = 0x888888
+text = '■'
+text_color = 0xff9900
+text_size = 96
+text_pos = [cx0.5, cx0.555]
+action = set:player:base_color:0xff9900
+
+button
+button_pos = [7, 1]
+size = [x0.041, x0.07]
+pos = [cx0.6275, cx0.3]
+active_color = 0x888888
+text = '■'
+text_color = 0x33cccc
+text_size = 96
+text_pos = [cx0.5, cx0.555]
+action = set:player:base_color:0x33cccc
+
+button
+button_pos = [8, 1]
+size = [x0.041, x0.07]
+pos = [cx0.6785, cx0.3]
+active_color = 0x888888
+text = '■'
+text_color = 0x9966ff
+text_size = 96
+text_pos = [cx0.5, cx0.555]
+action = set:player:base_color:0x9966ff
+
+button
+button_pos = [9, 1]
+size = [x0.041, x0.07]
+pos = [cx0.7295, cx0.3]
+active_color = 0x888888
+text = '■'
+text_color = 0x99ff33
+text_size = 96
+text_pos = [cx0.5, cx0.555]
+action = set:player:base_color:0x99ff33
+
+button
+button_pos = [0, 2]
+size = [x0.5, x0.07]
+pos = [cx0.5, cx0.4]
+active_color = 0x888888
+text_active_color = 0x999966
+text = 'Color: '
+text_bold = true
+text_size = 32
+text_pos = [lx0.04, cx0.5]
+action = input:player:base_color:6
+
+button
+button_pos = [0, 3]
+size = [x0.5, x0.07]
+pos = [cx0.5, cx0.5]
+active_color = 0x888888
+text = 'Map Controls'
+text_bold = true
+text_size = 32
+text_pos = [lx0.04, cx0.5]
+action = goto:settings
+
+button
+button_pos = [0, 4]
+size = [x0.2, x0.07]
+pos = [cx0.75, cx0.85]
+active_color = 0x888888
+text = 'Done'
+text_bold = true
+text_size = 32
+text_pos = [cx0.5, cx0.5]
+action = goto:settings
+
+block
+size = [x0.5, x0.14]
+pos = [cx0.5, cx0.65]
+color = 0x666666
+
+player_list
+size = [x0.4775, x0.1]
+pos = [cx0.5, cx0.65]
+color = 0x666666
+entry_size = [x0.58, x0.1]
+entry_spacing = 0
+entry_color = 0xbbbbbb
+player_size = [match, x0.5]
+player_pos = [cx0.075, cx0.5]
+only_last_player = 1
+text = 'name'
+text_bold = true
+text_size = 32
+text_pos = [cx0.2, cx0.5]
+
+control
+trigger = back
+action = remove:player
+
+control
+trigger = back
+action = goto:settings

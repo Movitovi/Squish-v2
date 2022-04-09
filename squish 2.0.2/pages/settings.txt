@@ -1,0 +1,71 @@
+block
+size = [x1, x1]
+pos = [0, 0]
+color = 0xbbbbbb
+
+block
+size = [x0.6, x0.8]
+pos = [lx0.325, ux0.1]
+color = 0x666666
+
+button
+button_pos = [0, 0]
+size = [x0.225, x0.07]
+pos = [cx0.1625, ux0.12]
+active_color = 0x888888
+text = 'Update Controllers'
+text_bold = true
+text_size = 32
+text_pos = [lx0.1, cx0.5]
+action = update_controllers
+
+button
+button_pos = [0, 1]
+size = [x0.225, x0.07]
+pos = [cx0.1625, ux0.22]
+active_color = 0x888888
+text = 'Add Player'
+text_bold = true
+text_size = 32
+text_pos = [lx0.1, cx0.5]
+action = goto:add_player
+
+button
+button_pos = [0, 2]
+size = [x0.225, x0.07]
+pos = [cx0.1625, ux0.32]
+active_color = 0x888888
+text = 'Remove Player'
+text_bold = true
+text_size = 32
+text_pos = [lx0.1, cx0.5]
+action = remove:player
+
+button
+button_pos = [0, 3]
+size = [x0.225, x0.07]
+pos = [cx0.1625, ux0.42]
+active_color = 0x888888
+text = 'Back'
+text_bold = true
+text_size = 32
+text_pos = [lx0.1, cx0.5]
+action = goto:main
+
+player_list
+size = [x0.58, x0.76]
+pos = [lx0.335, ux0.12]
+color = 0x666666
+entry_size = [x0.58, x0.1]
+entry_spacing = x0.02
+entry_color = 0xbbbbbb
+player_size = [match, x0.5]
+player_pos = [cx0.075, cx0.5]
+text = 'name'
+text_bold = true
+text_size = 32
+text_pos = [cx0.2, cx0.5]
+
+control
+trigger = back
+action = goto:main

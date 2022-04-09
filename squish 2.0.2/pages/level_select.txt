@@ -1,0 +1,35 @@
+block
+size = [x1, x1]
+pos = [0, 0]
+color = 0xbbbbbb
+
+block
+size = [x0.8, x0.7]
+pos = [cx0.5, ux0.1]
+color = 0x666666
+
+button
+button_pos = [0, 0]
+size = [x0.3, x0.07]
+pos = [lx0.17, ux0.85]
+active_color = 0x888888
+text = 'Back'
+text_bold = true
+text_size = 32
+text_pos = [cx0.5, cx0.5]
+action = goto:main
+
+button
+button_pos = [1, 0]
+size = [x0.3, x0.07]
+pos = [rx0.83, ux0.85]
+active_color = 0x888888
+text = 'Play'
+text_bold = true
+text_size = 32
+text_pos = [cx0.5, cx0.5]
+action = goto:level
+
+control
+trigger = back
+action = goto:main

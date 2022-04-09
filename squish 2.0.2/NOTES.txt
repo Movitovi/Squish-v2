@@ -1,0 +1,64 @@
+# Menu: Main
+    # Select Level
+    # Level Editor
+    # Players/Controls
+    # Quit
+
+
+# Menu: Select Level
+    # Level list w/ preview
+    # Press back to return to Menu
+
+
+# Menu: Level Editor
+    # Select level
+    # Copy existing level
+    # New level
+    # Press back to return to Menu
+
+
+# Menu: Players/Controls
+    # Update
+    # Map player
+
+
+# Level
+    # Load level
+    # Play game
+    # Once one left win the game
+
+
+# Level Editor
+    # Select size
+    # Select if player properties are global
+    # Select background color
+    # Select vertical looping (Add color if deadly boundary)
+    # Select horizontal looping (Add wall if not looping)
+    # Add block
+        # Set color
+        # Set properties
+    # Rearrange block hierarchy
+    # Move existing blocks
+    # Add player
+        # Set color
+        # Set properties
+        # Prevent overlap by shifting player up
+    # Move existing players
+    # Change existing player properties
+
+# Settings
+    # Work on the settings window next
+    # have player profiles that can either be
+    # controllers or keyboard maps and maybe have defualts
+    
+    # Make any up control set game.up to 1
+    # Same for game.down, and game.select
+    
+    # Update joysticks
+    # Add player
+        # Use numeric naming
+        # Map controls
+        # Pick color
+    # Maybe remap option
+    # Remove player
+    # Return
